@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Figtree&family=Open+Sans&display=swap');
+
 *, ::after,::before{
   box-sizing: border-box;
   margin: 0;
@@ -5,5 +8,82 @@
 }
 
 body{
-  background-color: coral;
+  background-color: rgb(236, 236, 236);
+  width: 100vh;
+  overflow-x: hidden;
 }
+
+nav{
+  display: flex;
+  align-items: center;
+  height: 12vh;
+  /* background-color: rgb(133, 138, 138); */
+  color: aliceblue;
+  position: relative;
+}
+
+#hero_bg_nav{
+  position: absolute; /* Position the image absolutely within the #hero section */
+  top: -70vh; /* Adjust the vertical position as needed */
+  left: 1vw; /* Adjust the horizontal position as needed */
+  z-index: -19; /* Set z-index to send it to the background */
+  transform: rotate(0deg);
+  height: 100vh;
+  width: 100vw;
+}
+nav > ul {
+  display: flex;
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  font-family: 'Figtree', sans-serif;
+  justify-content: space-between; /* Distribute space between items */
+  width: 42vw;
+  padding-left: 5vw;
+  font-size: 2vh;
+}
+#hero{
+  height: 88vh;
+  position: relative;
+}
+#hero_bg_main{
+  position: absolute; /* Position the image absolutely within the #hero section */
+  top: -12vh; /* Adjust the vertical position as needed */
+  left: 0px; /* Adjust the horizontal position as needed */
+  z-index: -20; /* Set z-index to send it to the background */
+  height: 80vh;
+  width: 100vw;
+}
+#hero_monitor{
+  position: absolute; 
+  top: -5vh; 
+  left: 35vw;
+  z-index: -18;
+  width: 60vw
+}
+#hero_laptop{
+  position: absolute; 
+  top: 2vh; 
+  left: 22vw; 
+  z-index: -17;
+  width: 80vw
+
+}
+/* nav, #hero {
+  background-image: url('src/hero_upper_main.svg'); 
+  background-position: -200px -300px; 
+  background-repeat: no-repeat; 
+} */
+
+.logo{
+  margin-left: 10vw;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  /* color: aliceblue; */
+  font-size: 4vh;
+
+}
+#logo{
+  height: 5vh;
+}
+
